@@ -39,6 +39,11 @@ jobs:
           pnpm run docs:build
           > docs/.vuepress/dist/.nojekyll
 
+      - name: 上传文档
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vuepress/dist
+
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
