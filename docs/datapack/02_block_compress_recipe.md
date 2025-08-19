@@ -10,16 +10,17 @@
   "inputs": [
     {
       "blocks": "minecraft:iron_block"
+    },
+    {
+      "blocks": "minecraft:iron_block"
     }
   ],
-  "results": [
-    {
-      "block": {
-        "name": "anvilcraft:compressed_iron_block"
-      },
-      "chance": 1.0
-    }
-  ]
+  "result": {
+    "block": {
+      "name": "anvilcraft:compressed_iron_block"
+    },
+    "chance": 1.0
+  }
 }
 ```
 
@@ -35,9 +36,9 @@
 
 - `blocks`: 方块ID（可以是单个方块ID字符串或方块ID数组）
 
-### results
+### result
 
-配方的输出结果列表。每个元素包含：
+配方的输出结果。元素包含：
 
 - `block`: 方块状态对象，包含方块名称和其他属性
 - `chance`: 结果出现的概率（0.0到1.0之间）
@@ -52,15 +53,16 @@
   "inputs": [
     {
       "blocks": "minecraft:iron_block"
+    },
+    {
+      "blocks": "minecraft:iron_block"
     }
   ],
-  "results": [
-    {
-      "block": {
-        "name": "anvilcraft:compressed_iron_block"
-      },
-      "chance": 1.0
-    }
-  ]
+  "results": {
+    "block": {
+      "name": "anvilcraft:compressed_iron_block"
+    },
+    "chance": 1.0
+  }
 }
 ```

@@ -7,23 +7,17 @@
 ```json
 {
   "type": "anvilcraft:squeezing",
-  "ingredients": [
-    {
-      "blocks": "minecraft:wet_sponge"
-    }
-  ],
-  "results": [
-    {
-      "block": {
-        "Name": "minecraft:sponge"
-      },
-      "chance": 1.0
-    }
-  ],
-  "cauldron": {
-    "fluid": "minecraft:water",
-    "consume": -1
-  }
+  "ingredient": {
+    "blocks": "minecraft:wet_sponge"
+  },
+  "result": {
+    "block": {
+      "Name": "minecraft:sponge"
+    },
+    "chance": 1.0
+  },
+  "fluid": "minecraft:water",
+  "consume": -1
 }
 ```
 
@@ -33,25 +27,34 @@
 
 固定值 `anvilcraft:squeezing`，标识这是一个挤压配方。
 
-### ingredients
+### ingredient
 
-配方所需的输入方块列表。每个元素包含：
+配方所需的输入方块。元素包含：
 
 - `blocks`: 方块ID（可以是单个方块ID字符串或方块ID数组）
 
-### results
+### result
 
-配方的输出结果列表。每个元素包含：
+配方的输出结果。元素包含：
 
 - `block`: 方块状态对象，包含方块名称和其他属性
 - `chance`: 结果出现的概率（0.0到1.0之间）
 
-### cauldron
+### fluid (流体)
 
-炼药锅相关设置：
+流体类型，如 "minecraft:water" 或 "minecraft:lava"
 
-- `fluid`: 流体类型
-- `consume`: 消耗量（可选，负数表示产生流体，正数表示消耗流体）
+### transform (转换流体)
+
+流体类型，如 "minecraft:water" 或 "minecraft:lava"，表示将要转换成的流体
+
+### consume (流体消耗)
+
+流体消耗量（可选）：
+
+- 正数表示消耗流体
+- 负数表示产生流体
+- 0 表示不改变流体（默认值）
 
 ## 使用示例
 
@@ -60,22 +63,16 @@
 ```json
 {
   "type": "anvilcraft:squeezing",
-  "ingredients": [
-    {
-      "blocks": "minecraft:wet_sponge"
-    }
-  ],
-  "results": [
-    {
-      "block": {
-        "Name": "minecraft:sponge"
-      },
-      "chance": 1.0
-    }
-  ],
-  "cauldron": {
-    "fluid": "minecraft:water",
-    "consume": -1
-  }
+  "ingredient": {
+    "blocks": "minecraft:wet_sponge"
+  },
+  "result": {
+    "block": {
+      "Name": "minecraft:sponge"
+    },
+    "chance": 1.0
+  },
+  "fluid": "minecraft:water",
+  "consume": -1
 }
 ```

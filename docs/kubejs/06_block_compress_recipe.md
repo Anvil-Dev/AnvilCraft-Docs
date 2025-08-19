@@ -13,14 +13,12 @@ ServerEvents.recipes(event => {
         blocks: "minecraft:iron_block"
       }
     ],
-    results: [
-      {
+    result: {
         block: {
-          name: "anvilcraft:compressed_iron_block"
+            name: "anvilcraft:compressed_iron_block"
         },
         chance: 1.0
-      }
-    ]
+    }
   })
 })
 ```
@@ -37,9 +35,9 @@ ServerEvents.recipes(event => {
 
 - `blocks`: 方块ID（可以是单个方块ID字符串或方块ID数组）
 
-### results (输出结果)
+### result (输出结果)
 
-输出结果列表，每个元素包含：
+输出结果，元素包含：
 
 - `block`: 方块状态对象，包含方块名称和其他属性
 - `chance`: 结果出现的概率（0.0到1.0之间）
@@ -53,10 +51,10 @@ ServerEvents.recipes(event => {
   
   event.recipes.anvilcraft.block_compress(
     [{ blocks: "minecraft:iron_block" }],    // 输入列表
-    [{                                      // 输出列表
+    {                                        // 输出
       block: { name: "anvilcraft:compressed_iron_block" },
       chance: 1.0
-    }]
+    }
   )
 })
 ```
@@ -67,6 +65,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
   event.recipes.anvilcraft.block_compress()
     .input("minecraft:iron_block")                // 输入方块
+    .input("minecraft:iron_block")
     .result("anvilcraft:compressed_iron_block")   // 输出方块
 })
 ```
@@ -78,6 +77,7 @@ ServerEvents.recipes(event => {
 ```js
 ServerEvents.recipes(event => {
   event.recipes.anvilcraft.block_compress()
+    .input("minecraft:iron_block")
     .input("minecraft:iron_block")
     .result("anvilcraft:compressed_iron_block")
 })

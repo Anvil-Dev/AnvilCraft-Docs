@@ -48,6 +48,18 @@ ServerEvents.recipes(event => {
 
 流体类型，如 "minecraft:water" 或 "minecraft:lava"
 
+### transform (转换流体)
+
+流体类型，如 "minecraft:water" 或 "minecraft:lava"，表示将要转换成的流体
+
+### consume (流体消耗)
+
+流体消耗量（可选）：
+
+- 正数表示消耗流体
+- 负数表示产生流体
+- 0 表示不改变流体（默认值）
+
 ## 实用方法
 
 ```js

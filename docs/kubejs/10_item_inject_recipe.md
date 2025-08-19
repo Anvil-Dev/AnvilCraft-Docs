@@ -19,10 +19,10 @@ ServerEvents.recipes(event => {
         count: 1
       }
     ],
-    input_block: {
+    block_ingredient: {
       blocks: "minecraft:water"
     },
-    result_block: {
+    block_result: {
       block: {
         name: "minecraft:air"
       },
@@ -52,13 +52,13 @@ ServerEvents.recipes(event => {
 - `id`: 物品ID
 - `count`: 物品数量
 
-### input_block (输入方块)
+### block_ingredient (输入方块)
 
 输入方块，包含：
 
 - `blocks`: 方块ID（可以是单个方块ID字符串或方块ID数组）
 
-### result_block (输出方块)
+### block_result (输出方块)
 
 输出方块，包含：
 
@@ -73,10 +73,10 @@ ServerEvents.recipes(event => {
   event.recipes.anvilcraft.item_inject("anvilcraft:glass_bottle_to_potion") // 仅ID
   
   event.recipes.anvilcraft.item_inject(
-    "minecraft:glass_bottle",             // 输入物品
+    "minecraft:glass_bottle",              // 输入物品
     [{ id: "minecraft:potion", count: 1 }],// 输出物品
-    { blocks: "minecraft:water" },        // 输入方块
-    {                                    // 输出方块
+    { blocks: "minecraft:water" },         // 输入方块
+    {                                      // 输出方块
       block: { name: "minecraft:air" },
       chance: 1.0
     }
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
   event.recipes.anvilcraft.item_inject(
     "minecraft:glass_bottle",             // 输入物品
     { blocks: "minecraft:water" },        // 输入方块
-    {                                    // 输出方块
+    {                                     // 输出方块
       block: { name: "minecraft:air" },
       chance: 1.0
     }

@@ -7,17 +7,13 @@
 ```json
 {
   "type": "anvilcraft:block_crush",
-  "inputs": [
-    {
-      "blocks": "minecraft:cobblestone"
-    }
-  ],
-  "results": [
-    {
-      "id": "minecraft:gravel",
-      "count": 1
-    }
-  ]
+  "input": {
+    "blocks": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "minecraft:gravel",
+    "count": 1
+  }
 }
 ```
 
@@ -27,15 +23,15 @@
 
 固定值 `anvilcraft:block_crush`，标识这是一个方块粉碎配方。
 
-### inputs
+### input
 
-配方所需的输入方块列表。每个元素包含：
+配方所需的输入方块。元素包含：
 
 - `blocks`: 方块ID（可以是单个方块ID字符串或方块ID数组）
 
-### results
+### result
 
-配方的输出物品列表。每个元素包含：
+配方的输出物品。元素包含：
 
 - `id`: 物品ID
 - `count`: 物品数量
@@ -47,16 +43,12 @@
 ```json
 {
   "type": "anvilcraft:block_crush",
-  "inputs": [
-    {
-      "blocks": "minecraft:cobblestone"
-    }
-  ],
-  "results": [
-    {
-      "id": "minecraft:gravel",
-      "count": 1
-    }
-  ]
+  "input": {
+    "blocks": "minecraft:cobblestone"
+  },
+  "result": {
+    "id": "minecraft:gravel",
+    "count": 1
+  }
 }
 ```

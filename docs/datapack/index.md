@@ -19,10 +19,11 @@
 - [超级加热配方](10_super_heating_recipe.md) - 使用高温流体将物品转换为其他物品
 - [时移配方](11_timewarp_recipe.md) - 使用时间力量和流体将物品转换为其他物品
 - [解包配方](12_unpack_recipe.md) - 将压缩物品解包为原始物品
-- [多方块结构配方](13_multiblock_recipe.md) - 定义复杂的多方块结构配方
-- [生物转换配方](14_mob_transform_recipe.md) - 定义生物实体之间的转换规则
-- [珠宝制作配方](15_jewel_crafting_recipe.md) - 制作各种珠宝和装饰性物品
-- [矿物涌泉配方](16_mineral_fountain_recipe.md) - 定义矿物涌泉的方块转换规则
+- [方块涂抹配方](13_block_smear_recipe.md) - 使用上方方块涂抹下方方块
+- [多方块结构配方](14_multiblock_recipe.md) - 定义复杂的多方块结构配方
+- [生物转换配方](15_mob_transform_recipe.md) - 定义生物实体之间的转换规则
+- [珠宝制作配方](16_jewel_crafting_recipe.md) - 制作各种珠宝和装饰性物品
+- [矿物涌泉配方](17_mineral_fountain_recipe.md) - 定义矿物涌泉的方块转换规则
 
 ## 使用说明
 

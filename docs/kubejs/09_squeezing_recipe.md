@@ -8,19 +8,15 @@
 ServerEvents.recipes(event => {
   event.custom({
     type: "anvilcraft:squeezing",
-    ingredients: [
-      {
-        blocks: "minecraft:wet_sponge"
-      }
-    ],
-    results: [
-      {
-        block: {
-          name: "minecraft:sponge"
-        },
-        chance: 1.0
-      }
-    ],
+    ingredient: {
+      blocks: "minecraft:wet_sponge"
+    },
+    result: {
+      block: {
+        name: "minecraft:sponge"
+      },
+      chance: 1.0
+    },
     fluid: "minecraft:water",
     consume: -1
   })
@@ -50,6 +46,10 @@ ServerEvents.recipes(event => {
 
 流体类型，如 "minecraft:water" 或 "minecraft:lava"
 
+### transform (转换流体)
+
+流体类型，如 "minecraft:water" 或 "minecraft:lava"，表示将要转换成的流体
+
 ### consume (流体消耗)
 
 流体消耗量（可选）：
@@ -57,7 +57,6 @@ ServerEvents.recipes(event => {
 - 正数表示消耗流体
 - 负数表示产生流体
 - 0 表示不改变流体（默认值）
-
 ## 实用方法
 
 ```js
@@ -67,18 +66,18 @@ ServerEvents.recipes(event => {
   
   event.recipes.anvilcraft.squeezing(
     "minecraft:wet_sponge",               // 输入
-    [{                                   // 输出
+    {                                     // 输出
       block: { name: "minecraft:sponge" },
       chance: 1.0
-    }]
+    }
   )
   
   event.recipes.anvilcraft.squeezing(
     "minecraft:wet_sponge",               // 输入
-    [{                                   // 输出
+    {                                     // 输出
       block: { name: "minecraft:sponge" },
       chance: 1.0
-    }],
+    },
     "minecraft:water"                    // 流体
   )
 })

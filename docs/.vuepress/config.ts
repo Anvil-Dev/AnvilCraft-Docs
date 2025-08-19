@@ -98,20 +98,24 @@ export default defineUserConfig({
                         link: '12_unpack_recipe'
                     },
                     {
+                        text: '方块涂抹配方',
+                        link: '13_block_smear_recipe'
+                    },
+                    {
                         text: '多方块结构配方',
-                        link: '13_multiblock_recipe'
+                        link: '14_multiblock_recipe'
                     },
                     {
                         text: '生物转换配方',
-                        link: '14_mob_transform_recipe'
+                        link: '15_mob_transform_recipe'
                     },
                     {
                         text: '珠宝制作配方',
-                        link: '15_jewel_crafting_recipe'
+                        link: '16_jewel_crafting_recipe'
                     },
                     {
                         text: '矿物涌泉配方',
-                        link: '16_mineral_fountain_recipe'
+                        link: '17_mineral_fountain_recipe'
                     }
                 ]
             },
@@ -152,40 +156,44 @@ export default defineUserConfig({
                         link: '06_block_compress_recipe'
                     },
                     {
+                        text: '方块涂抹配方',
+                        link: '07_block_smear_recipe'
+                    },
+                    {
                         text: '膨发配方',
-                        link: '07_bulging_recipe'
+                        link: '08_bulging_recipe'
                     },
                     {
                         text: '挤压配方',
-                        link: '08_squeezing_recipe'
+                        link: '09_squeezing_recipe'
                     },
                     {
                         text: '物品注入配方',
-                        link: '09_item_inject_recipe'
+                        link: '10_item_inject_recipe'
                     },
                     {
                         text: '超级加热配方',
-                        link: '10_super_heating_recipe'
+                        link: '11_super_heating_recipe'
                     },
                     {
                         text: '时移配方',
-                        link: '11_time_warp_recipe'
+                        link: '12_time_warp_recipe'
                     },
                     {
                         text: '多方块结构配方',
-                        link: '12_multiblock_recipe'
+                        link: '13_multiblock_recipe'
                     },
                     {
                         text: '生物转换配方',
-                        link: '13_mob_transform_recipe'
+                        link: '14_mob_transform_recipe'
                     },
                     {
                         text: '珠宝制作配方',
-                        link: '14_jewel_crafting_recipe'
+                        link: '15_jewel_crafting_recipe'
                     },
                     {
                         text: '矿物涌泉配方',
-                        link: '15_mineral_fountain_recipe'
+                        link: '16_mineral_fountain_recipe'
                     }
                 ]
             },
