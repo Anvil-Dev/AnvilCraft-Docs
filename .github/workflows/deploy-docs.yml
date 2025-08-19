@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  deploy-gh-pages:
+  build-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,11 +39,19 @@ jobs:
           pnpm run docs:build
           > docs/.vuepress/dist/.nojekyll
 
+  upload-pages:
+    runs-on: ubuntu-latest
+    needs: build-pages
+    steps:
       - name: 上传文档
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vuepress/dist
 
+  deploy-pages:
+    runs-on: ubuntu-latest
+    needs: build-pages
+    steps:
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
