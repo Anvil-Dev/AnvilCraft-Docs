@@ -9,8 +9,8 @@ export default defineUserConfig({
     description: '铁砧工艺是一个以铁砧为核心的 Minecraft 原版生存拓展模组。该模组致力于在保持 Minecraft 原版风格的基础上，为玩家提供更多实用的机械和工艺内容，提升游戏体验。',
 
     theme: defaultTheme({
-        logo: 'img/icon-light.png',
-        logoDark: 'img/icon.png',
+        logo: '/icon-light.png',
+        logoDark: '/icon.png',
 
         navbar: [
             {

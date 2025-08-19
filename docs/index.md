@@ -1,8 +1,8 @@
 ---
 home: true
 title: 主页
-heroImage: img/icon-light.png
-heroImageDark: img/icon.png
+heroImage: /icon-light.png
+heroImageDark: /icon.png
 actions:
   - text: 附属开发
     link: /addon/index.html
