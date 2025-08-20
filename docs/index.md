@@ -36,5 +36,5 @@ features:
   - title: 原版增强
     details: 增强各种原版机制，丰富游戏内容
 
-footer: CC-BY-NC-SA 4.0 Licensed | Copyright © 2024-present Anvil-Dev
+footer: CC-BY-NC-SA 4.0 Licensed Text And Code | ARR Licensed Assets | Copyright © 2024-present Anvil-Dev
 ---
